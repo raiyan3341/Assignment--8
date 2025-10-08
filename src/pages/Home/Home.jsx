@@ -1,12 +1,22 @@
-import React from 'react';
+import React from "react";
+import { useLoaderData, useNavigate } from "react-router-dom";
+import Banner from "../../components/Banner/Banner";
+import Apps from "../Apps/Apps";
 
 const Home = () => {
-    return (
-        <div>
-            <h2>Welcome to the Home Page</h2>
-            
-        </div>
-    );
+  const data = useLoaderData();
+  const navigate = useNavigate();
+
+  const handleShowMore = () => {
+    navigate("/apps");
+  };
+
+  return (
+    <div>
+      <Banner />
+      <Apps data={data} showMoreHandler={handleShowMore} />
+    </div>
+  );
 };
 
 export default Home;

@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://picsum.photos/id/1011/400/300",
+    "title": "CyberShield Antivirus",
+    "companyName": "SecureTech Ltd",
+    "id": 1,
+    "description": "A lightweight antivirus solution that provides real-time protection against malware and phishing attacks.",
+    "size": 85,
+    "reviews": 1240,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 580 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1025/400/300",
+    "title": "PhotoForge Editor",
+    "companyName": "Visionary Apps",
+    "id": 2,
+    "description": "An advanced photo editing tool with AI-powered background removal and color correction.",
+    "size": 110,
+    "reviews": 890,
+    "ratingAvg": 4.2,
+    "downloads": 340000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1045/400/300",
+    "title": "TaskPilot Pro",
+    "companyName": "NextWave Systems",
+    "id": 3,
+    "description": "A productivity app that helps teams organize tasks, track progress, and collaborate seamlessly.",
+    "size": 60,
+    "reviews": 2120,
+    "ratingAvg": 4.7,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 45 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1445 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1060/400/300",
+    "title": "FitTrack: Health Monitor",
+    "companyName": "WellLife Corp",
+    "id": 4,
+    "description": "Track your workouts, heart rate, and sleep patterns with detailed analytics and AI recommendations.",
+    "size": 95,
+    "reviews": 640,
+    "ratingAvg": 4.3,
+    "downloads": 270000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 205 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1065/400/300",
+    "title": "CryptoVault Wallet",
+    "companyName": "BlockSecure",
+    "id": 5,
+    "description": "Securely store and manage your cryptocurrency portfolio with 2FA and biometric protection.",
+    "size": 72,
+    "reviews": 980,
+    "ratingAvg": 4.1,
+    "downloads": 410000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 190 },
+      { "name": "4 star", "count": 260 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1070/400/300",
+    "title": "NoteEase",
+    "companyName": "MindFlow Studios",
+    "id": 6,
+    "description": "A minimalist note-taking app that syncs across all your devices instantly and securely.",
+    "size": 35,
+    "reviews": 1560,
+    "ratingAvg": 4.8,
+    "downloads": 920000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 1025 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1080/400/300",
+    "title": "GameForge Arena",
+    "companyName": "PlayVerse Inc",
+    "id": 7,
+    "description": "A competitive multiplayer platform featuring hundreds of games with live leaderboards.",
+    "size": 250,
+    "reviews": 3400,
+    "ratingAvg": 4.4,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 380 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 1640 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1085/400/300",
+    "title": "LangLearn AI",
+    "companyName": "EduNova Labs",
+    "id": 8,
+    "description": "An AI-powered language learning app with speech recognition and adaptive lessons.",
+    "size": 90,
+    "reviews": 1780,
+    "ratingAvg": 4.6,
+    "downloads": 690000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 550 },
+      { "name": "5 star", "count": 915 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1090/400/300",
+    "title": "WeatherMate",
+    "companyName": "SkyTech Solutions",
+    "id": 9,
+    "description": "Stay updated with real-time weather forecasts, radar maps, and air quality tracking.",
+    "size": 52,
+    "reviews": 890,
+    "ratingAvg": 4.3,
+    "downloads": 350000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 310 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1095/400/300",
+    "title": "BudgetBuddy",
+    "companyName": "FinSync Labs",
+    "id": 10,
+    "description": "Manage expenses, set savings goals, and get AI-based financial insights.",
+    "size": 65,
+    "reviews": 1350,
+    "ratingAvg": 4.5,
+    "downloads": 560000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 420 },
+      { "name": "5 star", "count": 610 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1100/400/300",
+    "title": "StreamBox Player",
+    "companyName": "NovaStream Media",
+    "id": 11,
+    "description": "Enjoy high-quality video streaming with adaptive bitrate and smart recommendations.",
+    "size": 140,
+    "reviews": 2470,
+    "ratingAvg": 4.4,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1105/400/300",
+    "title": "FocusZen Timer",
+    "companyName": "ClarityWorks",
+    "id": 12,
+    "description": "A Pomodoro-based focus timer with productivity tracking and calming sounds.",
+    "size": 28,
+    "reviews": 920,
+    "ratingAvg": 4.7,
+    "downloads": 290000,
+    "ratings": [
+      { "name": "1 star", "count": 10 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 490 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1110/400/300",
+    "title": "RecipeRealm",
+    "companyName": "Cookify Labs",
+    "id": 13,
+    "description": "Discover and share thousands of recipes with AI-based meal planning.",
+    "size": 75,
+    "reviews": 1640,
+    "ratingAvg": 4.6,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 840 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1115/400/300",
+    "title": "TravelPath Explorer",
+    "companyName": "GlobeTrek Inc",
+    "id": 14,
+    "description": "Plan your trips, find attractions, and navigate offline maps anywhere in the world.",
+    "size": 180,
+    "reviews": 2100,
+    "ratingAvg": 4.5,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 950 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1120/400/300",
+    "title": "DocuScan",
+    "companyName": "Paperless Co.",
+    "id": 15,
+    "description": "Turn your phone into a powerful document scanner with OCR and cloud sync.",
+    "size": 55,
+    "reviews": 1250,
+    "ratingAvg": 4.4,
+    "downloads": 430000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 210 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 530 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1125/400/300",
+    "title": "CodeSphere IDE",
+    "companyName": "DevCore Studios",
+    "id": 16,
+    "description": "A fast, cloud-based code editor with AI code completion and live debugging.",
+    "size": 120,
+    "reviews": 3100,
+    "ratingAvg": 4.6,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1650 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1130/400/300",
+    "title": "SleepHaven",
+    "companyName": "DreamFlow Apps",
+    "id": 17,
+    "description": "Relax with soothing sounds and sleep-tracking analytics to improve rest quality.",
+    "size": 48,
+    "reviews": 870,
+    "ratingAvg": 4.5,
+    "downloads": 260000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 130 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 375 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1135/400/300",
+    "title": "QuizMaster",
+    "companyName": "EduSpark Games",
+    "id": 18,
+    "description": "Challenge your knowledge with thousands of quizzes across various topics.",
+    "size": 70,
+    "reviews": 1920,
+    "ratingAvg": 4.3,
+    "downloads": 520000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 980 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1140/400/300",
+    "title": "ChatLink Messenger",
+    "companyName": "Connectify Labs",
+    "id": 19,
+    "description": "Fast, secure, and private messaging with end-to-end encryption and file sharing.",
+    "size": 105,
+    "reviews": 2760,
+    "ratingAvg": 4.6,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 290 },
+      { "name": "4 star", "count": 820 },
+      { "name": "5 star", "count": 1430 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/id/1145/400/300",
+    "title": "MindSketch",
+    "companyName": "CreativeCode Ltd",
+    "id": 20,
+    "description": "Draw, design, and brainstorm ideas visually with easy-to-use sketch tools.",
+    "size": 92,
+    "reviews": 1180,
+    "ratingAvg": 4.4,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 540 }
+    ]
+  }
+]
