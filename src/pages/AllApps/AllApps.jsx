@@ -3,7 +3,7 @@ import { useLoaderData, Link } from "react-router-dom";
 import App from "../App/App";
 import Loading from "../Loading/Loading";
 import NotFound from "../NotFound/NotFound";
-
+import { Search } from 'lucide-react';
 
 const AllApps = () => {
   const data = useLoaderData();
@@ -27,7 +27,7 @@ const AllApps = () => {
 
       <div className="flex justify-between items-center mt-10">
         <p className="font-bold ml-10 text-[#001931]">({filteredData.length}) Apps Found </p>
-        <input
+        <input 
           className="border border-gray-300 rounded-md p-1 w-80"
           type="search"
           name="search"

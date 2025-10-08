@@ -1,5 +1,8 @@
 import React from 'react';
 import heroimage from '../../assets/hero.png';
+import googleplay from '../../assets/pngwing.com.png';
+import appstore from '../../assets/pngwing.com (1).png'
+
 const Banner = () => {
     return (
         <div>
@@ -8,8 +11,8 @@ const Banner = () => {
                 <p className='text-[#627382]'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             </div>
             <div className='flex justify-center gap-5 mb-10 font-bold '>
-                <button className='border border-[#cfcfcf] text-[#001931] py-2 px-4 rounded'>Google Play</button>
-                <button className='border border-[#cfcfcf] text-[#001931] py-2 px-4 rounded'>App Store</button>
+                <a href="https://play.google.com/store/games?hl=en"> <button  className=' flex items-center gap-2 border border-[#cfcfcf] text-[#001931] py-2 px-4 rounded'> <span><img className='w-8' src={googleplay} alt="" /></span>Google Play</button></a>
+                <a href="https://www.apple.com/app-store/"> <button className=' flex items-center gap-2 border border-[#cfcfcf] text-[#001931] py-2 px-4 rounded'> <span><img className='w-8' src={appstore} alt="" /></span>App Store</button></a>
             </div>
 
             <img className='mx-auto' src={heroimage} alt="Hero" />

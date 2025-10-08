@@ -7,7 +7,7 @@ const App = ({ singleApp }) => {
     <div className="bg-white shadow-md rounded p-4 flex flex-col items-center">
       {/* App Image */}
       <img
-        className="w-40 h-50 object-cover mb-2 rounded"
+        className="w-40 h-40 object-cover mb-2 rounded"
         src={image}
         alt={title}
       />
