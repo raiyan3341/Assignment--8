@@ -29,7 +29,7 @@
 
 * **Frontend:** React.js, Tailwind CSS
 * **Routing:** React Router DOM
-* **State Management:** React Hooks (useState, useEffect, useMemo)
+* **State Management:** React Hooks (useState, useEffect)
 * **Storage:** LocalStorage API
 * **Notifications:** React Toastify
 * **Icons:** Lucide React
