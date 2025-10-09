@@ -24,28 +24,28 @@ const appsLoader = async () =>{
  export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         index: true,
         loader: appsLoader,
-        element: <Home />,
+        element: <Home></Home>,
       },
       {
         path: "apps",
         loader: appsLoader,
-        element: <AllApps />,
+        element: <AllApps></AllApps>,
       },
       {
         path: "app/:id",
         loader: appsLoader,
-        element: <AppDetails />,
+        element: <AppDetails></AppDetails>,
       },
       {
         path: "installation",
         loader: installedAppsLoader,
-        element: <InstalledApps />,
+        element: <InstalledApps></InstalledApps>,
       },
     ],
   },
