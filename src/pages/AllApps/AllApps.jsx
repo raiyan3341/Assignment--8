@@ -12,7 +12,7 @@ const data = useLoaderData();
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
     setLoading(true);
-    setTimeout(() => setLoading(false), 500);
+    setTimeout(() => setLoading(false), 300);
   };
 
     const filteredData = data.filter((app) =>

@@ -10,14 +10,14 @@ import InstalledApps from "../pages/InstalledApps/InstalledApps";
   const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 const appsLoader = async () =>{
-  await delay(500); 
+  await delay(300); 
    const response = await fetch("/appsData.json");
    if (!response.ok) throw new Error("Failed to fetch apps data");
   return response.json();
 };
 
  const installedAppsLoader = async () =>{
-   await delay(500);
+   await delay(300);
    return null;
 };
 
