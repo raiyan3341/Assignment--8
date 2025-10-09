@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <div>
-      <Banner />
+      <Banner></Banner>
       <Apps data={data} showMoreHandler={handleShowMore} />
     </div>
   );

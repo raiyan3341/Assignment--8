@@ -1,7 +1,7 @@
 import React from 'react';
 import errorpng from '../../assets/App-Error.png'
 
-const ErrorPage = () => {
+const ErrorPage = () =>{
     return (
         <div className="text-center items-center py-20">
               <img className="w-90 mx-auto" src={errorpng} alt="" />

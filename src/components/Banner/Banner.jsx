@@ -6,7 +6,7 @@ import appstore from '../../assets/pngwing.com (1).png'
 const Banner = () => {
     return (
         <div>
-            <div className='text-center space-y-6 my-10 px-4 sm:px-0'>
+            <div className='text-center  my-10 px-4 sm:px-0'>
          <h1 className='text-4xl sm:text-6xl font-bold text-[#001931]'>We Build <br /> <span className='bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] bg-clip-text text-transparent'>Productive</span> Apps</h1>
           <p className='text-[#627382] px-4'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br className='hidden sm:block' />Our goal is to turn your ideas into digital experiences that truly make an impact.
          </p>
@@ -20,7 +20,7 @@ const Banner = () => {
 
             <div className='max-w-[1240px] h-[320px] mx-auto bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] '>
 
-                <p className='text-center text-white py-4 text-3xl font-bold py-12'>Trusted by Millions, Built for You</p>
+                <p className='text-center text-white text-3xl font-bold py-12'>Trusted by Millions, Built for You</p>
                 <div className='grid grid-cols-3 text-center text-white gap-5 px-10'>
                     <p>Total Downloads</p>
                     <p>Total Reviews</p>

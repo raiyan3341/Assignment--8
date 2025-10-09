@@ -9,35 +9,34 @@ import InstalledApps from "../pages/InstalledApps/InstalledApps";
 
 const appsLoader = async () => {
   const response = await fetch("/appsData.json");
-  
-  return response.json(); 
+  if (!response.ok) throw new Error("Failed to fetch apps data");
+  return response.json();
 };
-
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: Root,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
         index: true,
         loader: appsLoader,
-        Component: Home,
+        element: <Home />,
       },
       {
-        path: "/apps",
+        path: "apps",
         loader: appsLoader,
-        Component: AllApps,
+        element: <AllApps />,
       },
       {
-        path: "/app/:id",
+        path: "app/:id",
+        loader: appsLoader,
         element: <AppDetails />,
-        loader: appsLoader,
       },
       {
-        path: "/installation",
-        element: <InstalledApps />, 
+        path: "installation",
+        element: <InstalledApps />,
       },
     ],
   },

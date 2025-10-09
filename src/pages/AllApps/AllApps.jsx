@@ -3,7 +3,6 @@ import { useLoaderData, Link } from "react-router-dom";
 import App from "../App/App";
 import Loading from "../Loading/Loading";
 import NotFound from "../NotFound/NotFound";
-import { Search } from 'lucide-react';
 
 const AllApps = () => {
   const data = useLoaderData();
@@ -13,7 +12,7 @@ const AllApps = () => {
   const handleSearch = (e) => {
     setSearchTerm(e.target.value.toLowerCase());
     setLoading(true);
-    setTimeout(() => setLoading(false), 500); // simulate loading delay
+    setTimeout(() => setLoading(false), 500);
   };
 
   const filteredData = data.filter((app) =>
@@ -27,24 +26,12 @@ const AllApps = () => {
 
       <div className="flex flex-col sm:flex-row justify-between items-center mt-10 space-y-4 sm:space-y-0">
         <p className="font-bold text-lg sm:ml-10 text-[#001931]">({filteredData.length}) Apps Found </p>
-        <input 
-          className="border border-gray-300 rounded-md p-1 w-80"
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search Apps..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
+        <input className="border border-gray-300 rounded-md p-1 w-80" type="search" placeholder="Search Apps..." value={searchTerm} onChange={handleSearch} />
       </div>
 
-      {loading ? (
-        <Loading />
-      ) : filteredData.length === 0 ? (
-        <NotFound />
-      ) : (
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mt-6">
-          {filteredData.map((singleApp) => (
+      {loading ? ( <Loading />) : filteredData.length === 0 ? (
+        <NotFound /> ) : ( <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mt-6">
+        {filteredData.map((singleApp) =>(
             <Link to={`/app/${singleApp.id}`} key={singleApp.id}>
               <App singleApp={singleApp} />
             </Link>
