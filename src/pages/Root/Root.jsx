@@ -7,35 +7,46 @@ import Loading from '../Loading/Loading';
 
 const Root = () => {
     const navigation = useNavigation();
-    const [showLoader, setShowLoader] = useState(false);
+    const [showLoader, setShowLoader] = useState(false); 
     const isNavigationLoading = navigation.state === 'loading';
 
+    // Loading transition ke beshi noticeable korar jonno delay use kora
     useEffect(() => {
         let startTimer;
         
         if (isNavigationLoading) {
-            // নেভিগেশন শুরু হলে, লোডারটি দেখানোর আগে 400ms ডিলে সেট করা হলো।
+            // Navigation state 'loading' hole 300ms pore loader show koro
             startTimer = setTimeout(() => {
                 setShowLoader(true);
-            }, 400); 
+            }, 300); 
         } else {
-            // নেভিগেশন শেষ হলে সাথে সাথে লোডার লুকিয়ে ফেলা।
+            // Navigation state 'idle' hole shathe shathe loader lukano
             clearTimeout(startTimer);
             setShowLoader(false);
         }
         
-        // ক্লিনআপ ফাংশন: টাইমারটি বাতিল করা।
+        // Cleanup function
         return () => clearTimeout(startTimer);
     }, [isNavigationLoading]); 
 
     return (
-        <div className='w-[1240px] mx-auto'>
-            {/* showLoader true হলে Loading কম্পোনেন্ট দেখাবে */}
-            {showLoader && <Loading />} 
+        // max-w ebong min-h-screen diye layout ke stable kora holo
+        <div className='max-w-[1240px] mx-auto min-h-screen flex flex-col'> 
+            
+            <Nabvar />
 
-            <Nabvar></Nabvar>
-            <Outlet></Outlet>
-            <Footer></Footer>
+            {/* Main content area. Flex-grow diye eta Navbar o Footer er majher shob jaiga nebe */}
+            <main className='flex-grow'>
+                {/* Jodi showLoader true hoy, tokhon shudhu Loading dekhabe */}
+                {showLoader ? (
+                    <Loading />
+                ) : (
+                    // Loading na thakle Outlet theke content load hobe
+                    <Outlet />
+                )}
+            </main>
+            
+            <Footer />
         </div>
     );
 };

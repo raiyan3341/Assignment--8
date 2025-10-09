@@ -52,7 +52,7 @@ const InstalledApps = () => {
     };
 
     return (
-        <div className='w-[1240px] mx-auto mt-10 min-h-screen'>
+        <div className='max-w-[1240px] mx-auto mt-10 px-4'>
             <div className='text-center space-y-2 mb-10'>
                 <h2 className='text-4xl font-bold text-[#001931]'>Your Installed Apps</h2>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>

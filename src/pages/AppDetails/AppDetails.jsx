@@ -27,7 +27,8 @@ const AppDetails = () => {
   };
 
 
-  if (!app) return <h2 className="text-center text-2xl mt-10">App Not Found</h2>;
+  if (!app) return  <h2 className="text-center text-2xl font-bold mt-29">App is Not Found <br /> <br /> <span className="font-normal text-gray-500">The app you are looking for does not exist or has been removed</span></h2>;
+
 
 
   const sortedRatings = [...app.ratings].sort((a, b) => {
@@ -37,16 +38,16 @@ const AppDetails = () => {
   });
 
   return (
-    <div className="w-[1000px] mx-auto mt-10 bg-white shadow-md rounded-xl p-8">
-      <div className="flex items-center space-x-6">
-        <img src={app.image} alt={app.title} className="w-60 h-56 rounded-lg" />
+    <div className="max-w-[1000px] mx-auto mt-10 bg-white shadow-md rounded-xl p-8">
+      <div className="flex flex-col md:flex-row gap-10">
+        <img src={app.image} alt={app.title} className="items-center w-full object-cover md:w-70 h-56 rounded-lg " />
         <div>
           <h1 className="text-3xl font-bold">{app.title}</h1>
           <p className="text-gray-500 font-medium mt-2">Developed by <span className="bg-clip-text text-transparent bg-[linear-gradient(125.07deg,rgba(99,46,227,1),rgba(159,98,242,1)_100%)] ">{app.companyName}</span></p>
           
           <div className="border-b-4 border-b-gray-300 w-full mt-7"></div>
           
-          <div className="flex space-x-6 mt-4">
+          <div className="grid grid-cols-3 gap-4 p-4 rounded-md mt-6">
             <div className="items-center ">
               <img className="w-8 h-8" src={downloadimg} alt="Downloads" />
               <p>Downloads <br /> <strong className="font-bold text-2xl">{app.downloads.toLocaleString()}</strong></p>
@@ -63,7 +64,7 @@ const AppDetails = () => {
           </div>
           
           <button 
-            className="mt-4 px-5 py-2 bg-green-500 text-white rounded-md"
+            className="mt-4 px-5 py-2 bg-green-500 text-white rounded-md w-full md:w-auto hover:bg-green-600 font-medium"
             onClick={handleInstall} 
           >
             Install Now ({app.size} MB)

@@ -10,9 +10,9 @@ const Apps = ({ data }) => {
   };
 
   return (
-    <div className="w-[1240px] mx-auto mt-10">
+    <div className="max-w-[1240px] mx-auto mt-10 px-4">
       <h2 className="text-3xl font-bold text-center">Trending Apps</h2>
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+      <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mt-6">
         {data.slice(0, 8).map((singleApp) => (
           <Link to={`/app/${singleApp.id}`} key={singleApp.id}> 
             <App singleApp={singleApp} />

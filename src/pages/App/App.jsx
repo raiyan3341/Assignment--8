@@ -4,10 +4,10 @@ const App = ({ singleApp }) => {
   const { image, title, downloads, ratingAvg } = singleApp;
 
   return (
-    <div className="bg-white shadow-md rounded p-4 flex flex-col items-center">
+    <div className=" bg-white w-full h-60 md:w-full max-h-80 shadow-md rounded p-4 flex flex-col items-center">
       {/* App Image */}
       <img
-        className="w-40 h-40 object-cover mb-2 rounded"
+        className="w-20 h-20 md:w-40 md:h-40 object-cover mb-2 rounded"
         src={image}
         alt={title}
       />

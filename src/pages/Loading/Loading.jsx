@@ -2,9 +2,14 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="flex justify-center items-center h-64">
-      <p className="text-4xl">Loading...</p>
-      <div className="animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
+    // min-h-[50vh] dewa holo jate container er height thik thake
+    <div className="flex justify-center items-center w-full min-h-[50vh]"> 
+      {/* Loading spinner ke center kora */}
+      <div className="flex flex-col items-center space-y-3">
+        {/* Spinner er color site er theme-er sathe match kora holo */}
+        <div className="animate-spin rounded-full h-16 w-16 border-4 border-gray-300 border-t-[rgba(99,46,227,1)]"></div>
+        <p className="text-xl font-semibold text-[#627382]">Loading Content...</p>
+      </div>
     </div>
   );
 };

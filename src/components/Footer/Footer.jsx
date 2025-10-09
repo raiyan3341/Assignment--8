@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className=" w-[1240px] mx-auto footer sm:footer-horizontal bg-neutral text-neutral-content mt-10 p-10">
+        <footer className=" max-w-[1240px] mx-auto mt-10 p-10 text-center items-center justify-between grid grid-cols-3 footer bg-neutral text-neutral-content">
   <nav>
     <h6 className="footer-title">Services</h6>
     <a className="link link-hover">Branding</a>
