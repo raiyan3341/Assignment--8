@@ -27,7 +27,7 @@ const InstalledApps = () =>{
       const [criteria, order] = sortOption.split("-");
       let comparison = 0;
       if (criteria === "downloads") comparison = a.downloads - b.downloads;
-      return order === "lowToHigh" ? comparison : -comparison;
+    return order === "lowToHigh" ? comparison : -comparison;
     });
 
     return sortableApps;
@@ -49,10 +49,10 @@ const InstalledApps = () =>{
         <p className="font-bold text-[#001931]">{installedApps.length} Apps Found</p>
 
         <select className="border border-gray-300 rounded-md p-1 text-sm" value={sortOption} onChange={handleSortChange}>
-          <option value="none">Sort By Downloads</option>
+        <option value="none">Sort By Downloads</option>
           <option value="downloads-highToLow"> High to Low</option>
           <option value="downloads-lowToHigh"> Low to High</option>
-        </select>
+      </select>
       </div>
 
       <div className="mt-5 space-y-4">
@@ -62,9 +62,8 @@ const InstalledApps = () =>{
             <Link to="/apps" className="text-purple-600 mt-2 inline-block hover:underline">
               Browse Apps
             </Link>
-          </div>
-        ) : (
-          sortedApps.map((app) =>(
+          </div> ) : (
+            sortedApps.map((app) =>(
             <div key={app.id} className="bg-white shadow-sm rounded-lg p-4 flex items-center justify-between border border-gray-200">
               <div className="flex items-center space-x-4">
                 <div className="w-16 h-16 bg-gray-200 rounded-md flex-shrink-0">
@@ -80,7 +79,7 @@ const InstalledApps = () =>{
                 </div>
               </div>
               <button onClick={() => handleUninstall(app.id)} className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md font-medium transition duration-200">Uninstall</button>
-            </div>
+          </div>
           ))
         )}
       </div>

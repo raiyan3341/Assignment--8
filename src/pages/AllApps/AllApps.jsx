@@ -4,8 +4,8 @@ import App from "../App/App";
 import Loading from "../Loading/Loading";
 import NotFound from "../NotFound/NotFound";
 
-const AllApps = () => {
-  const data = useLoaderData();
+const AllApps = () =>{
+const data = useLoaderData();
   const [searchTerm, setSearchTerm] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -15,7 +15,7 @@ const AllApps = () => {
     setTimeout(() => setLoading(false), 500);
   };
 
-  const filteredData = data.filter((app) =>
+    const filteredData = data.filter((app) =>
     app.title.toLowerCase().includes(searchTerm)
   );
 

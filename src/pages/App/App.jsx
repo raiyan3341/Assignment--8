@@ -1,6 +1,6 @@
 import React from "react";
 
-const App = ({ singleApp }) => {
+const App = ({ singleApp }) =>{
   const { image, title, downloads, ratingAvg } = singleApp;
 
   return (

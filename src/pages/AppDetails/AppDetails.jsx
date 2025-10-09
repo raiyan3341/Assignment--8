@@ -8,21 +8,22 @@ import { ToastContainer,toast } from 'react-toastify';
 
 
 const AppDetails = () =>{
-  const { id } = useParams();
-  const data = useLoaderData();
-  const app = data.find((item) => item.id === parseInt(id));
-  const [isInstalled, setIsInstalled] = useState(false);
+const { id } = useParams();
+const data = useLoaderData();
+const app = data.find((item) => item.id === parseInt(id));
+const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() =>{
     const installedAppsJson = localStorage.getItem("installedApps");
     const installedApps = installedAppsJson ? JSON.parse(installedAppsJson) : [];
     const installed = installedApps.some((a) => a.id === app.id);
     setIsInstalled(installed);
-  }, [app?.id]);
+  }, 
+  [app?.id]);
 
   const handleInstall = () =>{
     const installedAppsJson = localStorage.getItem("installedApps");
-    const installedApps = installedAppsJson ? JSON.parse(installedAppsJson) :[];
+     const installedApps = installedAppsJson ? JSON.parse(installedAppsJson) :[];
     if (!installedApps.some((a) => a.id === app.id)){
       const updatedApps = [...installedApps, app];
       localStorage.setItem("installedApps", JSON.stringify(updatedApps));
@@ -38,7 +39,7 @@ const AppDetails = () =>{
 
   const sortedRatings = [...app.ratings].sort((a, b) =>{
     const ratingA = parseInt(a.name.split(' ')[0]);
-    const ratingB = parseInt(b.name.split(' ')[0]);
+     const ratingB = parseInt(b.name.split(' ')[0]);
     return ratingB - ratingA; 
   });
 
@@ -64,7 +65,7 @@ const AppDetails = () =>{
             <div>
               <img className="w-8 h-8" src={review} alt="Total Reviews" />
               <p>Total Reviews <br /> <span className="font-bold text-2xl">{app.reviews.toLocaleString()}</span></p>
-            </div>
+          </div>
           </div>
           
           <button onClick={handleInstall} disabled={isInstalled} className={`px-5 py-2 rounded-md font-medium ${

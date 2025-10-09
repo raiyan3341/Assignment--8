@@ -7,13 +7,21 @@ import AllApps from "../pages/AllApps/AllApps";
 import AppDetails from "../pages/AppDetails/AppDetails";
 import InstalledApps from "../pages/InstalledApps/InstalledApps";
 
-const appsLoader = async () => {
-  const response = await fetch("/appsData.json");
-  if (!response.ok) throw new Error("Failed to fetch apps data");
+  const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+const appsLoader = async () =>{
+  await delay(500); 
+   const response = await fetch("/appsData.json");
+   if (!response.ok) throw new Error("Failed to fetch apps data");
   return response.json();
 };
 
-export const router = createBrowserRouter([
+ const installedAppsLoader = async () =>{
+   await delay(500);
+   return null;
+};
+
+ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
@@ -36,6 +44,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "installation",
+        loader: installedAppsLoader,
         element: <InstalledApps />,
       },
     ],

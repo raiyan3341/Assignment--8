@@ -3,11 +3,11 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Apps from "../Apps/Apps";
 
-const Home = () => {
+const Home = () =>{
   const data = useLoaderData();
   const navigate = useNavigate();
 
-  const handleShowMore = () => {
+  const handleShowMore = () =>{
     navigate("/apps");
   };
 
